@@ -1,7 +1,7 @@
 // Importing the Cloudinary SDK's v2 module as 'cloudinary' for easier reference
 import { v2 as cloudinary } from "cloudinary";
 
-// Importing the 'fs' module from Node.js, which provides utilities for working with the file system
+// Importing the 'fs' module from Node.js, which provides utilities for working with the file system        
 import fs from "fs";
 
 // Configuring Cloudinary with the credentials obtained from environment variables
