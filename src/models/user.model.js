@@ -69,7 +69,7 @@ userSchema.pre("save", async function (next) {
     // Check if password has been modified
     if (!this.isModified("password")) return next();
     // Hash the password using bcrypt
-    this.password = bcrypt.hash(this.password, 10); // 10 is the saltRounds value
+    this.password = await  bcrypt.hash(this.password, 10); // 10 is the saltRounds value
     next(); // Proceed to next middleware
 });
 
